@@ -24,3 +24,11 @@
     background-color: $val;
   }
 }
+
+// Project specific styles
+
+.navbar {
+  a {
+    font-size: $sm;
+  }
+}
