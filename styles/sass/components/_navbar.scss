@@ -9,6 +9,8 @@
 .navbar {
   @extend %flex-layout;
   padding: $base-padding $base-padding * 2;
+  padding-left: 0px;
+  padding-right: 0px;
   //   box-shadow: lighten($base-box-shadow);
   .site-title {
     font-size: $lg;

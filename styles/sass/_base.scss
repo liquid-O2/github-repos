@@ -1,5 +1,36 @@
 // import google font
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'telegrafbold';
+  src: url('../../fonts/telegraf-bold-webfont.woff2') format('woff2'),
+    url('../../fonts/telegraf-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'telegrafregular';
+  src: url('../../fonts/telegraf-regular-webfont.woff2') format('woff2'),
+    url('../../fonts/telegraf-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'telegrafultrabold';
+  src: url('../../fonts/telegraf-ultrabold-webfont.woff2') format('woff2'),
+    url('../../fonts/telegraf-ultrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'telegrafultralight';
+  src: url('../../fonts/telegraf-ultralight-webfont.woff2') format('woff2'),
+    url('../../fonts/telegraf-ultralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* reset styles */
 * {
@@ -8,7 +39,7 @@
 }
 
 body {
-  font-family: Poppins;
+  font-family: 'telegrafregular';
   background-color: $light;
 }
 
@@ -24,4 +55,13 @@ a {
 
 img {
   max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'telegrafbold';
 }

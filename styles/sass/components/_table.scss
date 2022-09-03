@@ -1,0 +1,50 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  width: 100%;
+  .Repos {
+    width: 50%;
+  }
+  .index {
+    width: 2%;
+  }
+  tr {
+    // width: 100%;
+  }
+}
+
+.table-head-wrapper {
+  font-family: 'telegrafbold';
+  color: $dark;
+  th {
+    border-bottom: $base-border;
+    // padding-bottom: $base-padding;
+    width: 100%;
+  }
+  .index {
+    width: 5%;
+    padding: $base-padding;
+    text-align: left;
+  }
+  .Repos {
+    width: 45%;
+    text-align: left;
+    padding: calc($base-padding * 1.2);
+  }
+  .stars {
+    width: 16.6%;
+    padding: $base-padding;
+  }
+  .forks {
+    width: 16.6%;
+    padding: $base-padding;
+  }
+  .openIssues {
+    width: 16.6%;
+    text-align: right;
+    padding: $base-padding;
+  }
+}

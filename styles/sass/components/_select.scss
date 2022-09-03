@@ -1,0 +1,17 @@
+select {
+  padding: $base-padding;
+  // -webkit-appearance: none;
+  // appearance: none;
+  // background-image: url('/public/Vector.svg');
+  // background-size: 24px;
+  // background-repeat: no-repeat;
+  // background-position: calc(100% - 8px) center;
+  border: none;
+  border-radius: $base-border-radius;
+  background-color: $border;
+  color: $primary;
+  font-size: calc($sm - 3px);
+  font-family: 'telegrafbold';
+  border-right: 16px solid transparent;
+  width: fit-content;
+}
