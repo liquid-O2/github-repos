@@ -25,8 +25,8 @@ const Table = () => {
           <div className='container mt-3'>
             <table>
               <TableHead />
+              <TableBody lang={lang} />
             </table>
-            <TableBody lang={lang} />
           </div>
         );
       }}

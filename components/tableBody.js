@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import useSWR from 'swr';
 
 const fetcher = (args) => fetch(args).then((res) => res.json());
@@ -7,8 +8,16 @@ const TableBody = (prop) => {
     `https://api.github.com/search/repositories?q=stars:>1+language:${prop.lang}&sort=stars&order=desc&type=Repositories`,
     fetcher
   );
-  //   console.log(prop.lang);
-  return <div>Selected Language is {prop.lang}</div>;
+
+  if (data) {
+    return (
+      <tbody>
+        {data.items.map((item, index) => {
+          return <TbRow key={index} item={item} index={index} />;
+        })}
+      </tbody>
+    );
+  }
 };
 
 export default TableBody;
@@ -27,29 +36,29 @@ export default TableBody;
 
 //   return data;
 // };
-const TableRow = (data) => {
-  //   const { id, owner, stargazers_count, forks, open_issues, name } = data.items;
-  //   console.log(data.prop.items);
-  //   const [login, avatar_url] = owner;
-
-  return (
-    <tbody>
-      {data.prop.items.map((item, index) => {
-        return <TbRow key={index} item={item} />;
-      })}
-    </tbody>
-  );
-};
 
 const TbRow = (prop) => {
   //   const [login, avatar_url] = owner;
-  const { id, owner, stargazers_count, forks, open_issues, name } = prop.item;
-  const { index } = prop.index;
+  const { id, owner, stargazers_count, forks, open_issues, name, html_url } =
+    prop.item;
+  const index = prop.index;
   const { login, avatar_url } = owner;
-
+  // console.log(index);
   return (
     <tr>
       <td>{index}</td>
+      <td>
+        <Link href={html_url}>
+          <a>
+            <div className='repo-card'>
+              <img src={avatar_url} alt={login} width='32px' height='32px' />
+              <h5>{name}</h5>
+            </div>
+          </a>
+        </Link>
+      </td>
+      <td>{stargazers_count}</td>
+      <td>{open_issues}</td>
     </tr>
   );
 };

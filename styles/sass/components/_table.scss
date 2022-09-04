@@ -12,39 +12,49 @@ thead {
     width: 2%;
   }
   tr {
-    // width: 100%;
+    width: 100%;
   }
 }
 
 .table-head-wrapper {
   font-family: 'telegrafbold';
   color: $dark;
+  width: 100%;
+  z-index: 22;
   th {
     border-bottom: $base-border;
     // padding-bottom: $base-padding;
     width: 100%;
   }
   .index {
-    width: 5%;
+    // width: 5%;
     padding: $base-padding;
     text-align: left;
   }
   .Repos {
-    width: 45%;
+    // width: 45%;
     text-align: left;
     padding: calc($base-padding * 1.2);
   }
   .stars {
-    width: 16.6%;
+    // width: 16.6%;
     padding: $base-padding;
   }
   .forks {
-    width: 16.6%;
+    // width: 16.6%;
     padding: $base-padding;
   }
   .openIssues {
-    width: 16.6%;
+    // width: 16.6%;
     text-align: right;
     padding: $base-padding;
   }
+}
+
+.repo-card {
+  display: flex;
+}
+
+tbody {
+  padding: $base-padding;
 }
