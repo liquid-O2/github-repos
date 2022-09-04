@@ -56,7 +56,7 @@ export default function Home() {
         <title>Github Battle</title>
         <meta name='description' content='Github battle' />
       </Head>
-      <Navbar />
+
       <div className='container mt-2 display-f justify-space-between'>
         <h2 className='text-dark font-lg'>Popular</h2>
         <select
@@ -72,12 +72,10 @@ export default function Home() {
           ))}
         </select>
       </div>
-      {/* <p>{selectedLanguage}</p> */}
+
       <SelectedLang.Provider value={lang.current}>
         <Table />
       </SelectedLang.Provider>
-      {/* <Select /> */}
-      {/* <Table /> */}
     </>
   );
 }

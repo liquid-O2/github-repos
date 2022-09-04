@@ -1,60 +1,62 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
+.index {
+  // width: 5%;
+  padding: $base-padding;
+  text-align: left;
+  border-bottom: $base-border;
 }
-
-thead {
-  width: 100%;
-  .Repos {
-    width: 50%;
-  }
-  .index {
-    width: 2%;
-  }
-  tr {
-    width: 100%;
-  }
+.Repos {
+  // width: 45%;
+  text-align: left;
+  padding: calc($base-padding * 1.2);
+  border-bottom: $base-border;
 }
-
-.table-head-wrapper {
-  font-family: 'telegrafbold';
-  color: $dark;
-  width: 100%;
-  z-index: 22;
-  th {
-    border-bottom: $base-border;
-    // padding-bottom: $base-padding;
-    width: 100%;
-  }
-  .index {
-    // width: 5%;
-    padding: $base-padding;
-    text-align: left;
-  }
-  .Repos {
-    // width: 45%;
-    text-align: left;
-    padding: calc($base-padding * 1.2);
-  }
-  .stars {
-    // width: 16.6%;
-    padding: $base-padding;
-  }
-  .forks {
-    // width: 16.6%;
-    padding: $base-padding;
-  }
-  .openIssues {
-    // width: 16.6%;
-    text-align: right;
-    padding: $base-padding;
-  }
+.stars {
+  // width: 16.6%;
+  padding: $base-padding;
+  border-bottom: $base-border;
+}
+.forks {
+  // width: 16.6%;
+  padding: $base-padding;
+  border-bottom: $base-border;
+}
+.openIssues {
+  // width: 16.6%;
+  text-align: right;
+  padding: $base-padding;
+  border-bottom: $base-border;
 }
 
 .repo-card {
   display: flex;
+  column-gap: 8px;
+  align-items: center;
+  color: $dark;
+  img {
+    border-radius: $base-border-radius;
+  }
+  h5 {
+    font-size: 16px;
+    letter-spacing: 2%;
+  }
 }
 
-tbody {
-  padding: $base-padding;
+.thead {
+  color: $dark;
+}
+
+.tbody {
+  width: 100%;
+  color: $dark;
+  p {
+    padding: $base-padding;
+  }
+}
+
+.body-index {
+  opacity: 0.7;
+}
+
+.body-issues {
+  text-align: right;
 }

@@ -12,6 +12,7 @@
   padding-left: 0px;
   padding-right: 0px;
   //   box-shadow: lighten($base-box-shadow);
+  justify-content: center;
   .site-title {
     font-size: $lg;
   }
@@ -30,7 +31,15 @@
 // Project specific styles
 
 .navbar {
+  justify-content: center;
+  align-items: center;
   a {
     font-size: $sm;
   }
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

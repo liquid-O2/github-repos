@@ -11,31 +11,16 @@ const TableBody = (prop) => {
 
   if (data) {
     return (
-      <tbody>
+      <div>
         {data.items.map((item, index) => {
           return <TbRow key={index} item={item} index={index} />;
         })}
-      </tbody>
+      </div>
     );
   }
 };
 
 export default TableBody;
-
-// const fetcher = (args) => fetch(args).then((res) => res.json());
-// function TableRow({
-// index,
-// owner,
-// stargazers_count,
-// forks,
-// open_issues,
-// name,
-//   });
-// const handleFetch = (lang) => {
-//   //   console.log(lang);
-
-//   return data;
-// };
 
 const TbRow = (prop) => {
   //   const [login, avatar_url] = owner;
@@ -45,9 +30,9 @@ const TbRow = (prop) => {
   const { login, avatar_url } = owner;
   // console.log(index);
   return (
-    <tr>
-      <td>{index}</td>
-      <td>
+    <div className='row tbody'>
+      <p className='col-1-sm body-index'>{index}</p>
+      <p className='col-5-sm'>
         <Link href={html_url}>
           <a>
             <div className='repo-card'>
@@ -56,9 +41,10 @@ const TbRow = (prop) => {
             </div>
           </a>
         </Link>
-      </td>
-      <td>{stargazers_count}</td>
-      <td>{open_issues}</td>
-    </tr>
+      </p>
+      <p className='col-2-sm'>{stargazers_count}</p>
+      <p className='col-2-sm'>{forks}</p>
+      <p className='col-2-sm body-issues'>{open_issues}</p>
+    </div>
   );
 };
