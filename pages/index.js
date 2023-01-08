@@ -24,7 +24,7 @@ export default function Home() {
         <meta name='description' content='Github repos' />
       </Head>
 
-      <div className='container mt-2 display-f justify-space-between'>
+      <div className='container top display-f justify-space-between'>
         <h2 className='text-dark font-lg'>Popular</h2>
         <select name='tags' id='tags' selected={selectedLanguage} onChange={(e) => update(e.target.value)}>
           {languages.map((language) => (

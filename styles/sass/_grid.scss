@@ -1,15 +1,15 @@
-@use "sass:math";
+@use 'sass:math';
 
 $grid-columns: 12;
 $grid-gaps: (
-  "0": 0,
-  "half": 8px,
-  "1": 16px,
-  "2": 24px,
-  "3": 32px,
-  "4": 40px,
-  "5": 56px,
-  "6": 64px,
+  '0': 0,
+  'half': 8px,
+  '1': 16px,
+  '2': 24px,
+  '3': 32px,
+  '4': 40px,
+  '5': 56px,
+  '6': 64px,
 );
 
 $layout-values: flex-start, flex-end, center, space-between, space-around;
@@ -19,8 +19,13 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
   width: 100%;
   max-width: 1333px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 28px;
   box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 48px;
+  }
 }
 
 .row {

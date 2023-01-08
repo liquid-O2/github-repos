@@ -12,7 +12,7 @@ const TableBody = (prop) => {
 
   if (data) {
     return (
-      <div>
+      <div className='rows'>
         {data.items.map((item, index) => {
           return <TbRow key={index} item={item} index={index} />
         })}
@@ -29,21 +29,23 @@ const TbRow = (prop) => {
   const { login, avatar_url } = owner
 
   return (
-    <div className='row tbody'>
-      <p className='col-1-sm body-index'>{index}</p>
-      <p className='col-5-sm'>
+    <div className=' tbody-row'>
+      <p className=' body-index'>{index}</p>
+      <p className=''>
         <Link href={html_url}>
           <a>
-            <div className='repo-card'>
-              <Image src={avatar_url} alt={login} width='32px' height='32px' />
-              <h5>{name}</h5>
+            <div className='repo-card '>
+              <figure className='body-image'>
+                <Image src={avatar_url} alt={login} className='' layout='fill' />
+              </figure>
+              <h5 className='name'>{name}</h5>
             </div>
           </a>
         </Link>
       </p>
-      <p className='col-2-sm'>{stargazers_count}</p>
-      <p className='col-2-sm'>{forks}</p>
-      <p className='col-2-sm body-issues'>{open_issues}</p>
+      <p className='star-row'>{stargazers_count}</p>
+      <p className='forks-row'>{forks}</p>
+      <p className=' body-issues'>{open_issues}</p>
     </div>
   )
 }

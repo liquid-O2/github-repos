@@ -18,3 +18,79 @@
 // utilities (margin, padding, opacity)
 @import 'sizes';
 @import 'utilities';
+
+.openIssues,
+.body-issues {
+  display: none;
+  text-align: end;
+}
+
+figure {
+  position: relative;
+}
+.body-image {
+  height: 18px;
+  width: 18px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .openIssues,
+  .body-issues {
+    display: block;
+  }
+  .body-image {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+.tbody-row,
+.thead {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 2.2fr 1fr 1fr;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tbody-row,
+.thead {
+  p {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .tbody-row,
+  .thead {
+    display: grid;
+    grid-template-columns: 0.5fr 2.2fr 1fr 1fr 1fr;
+  }
+}
+.body-index {
+  font-size: 12px;
+  max-width: 32px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-size: 14px;
+  padding-right: 8px;
+}
+.star-row,
+.stars,
+.forks,
+.forks-row {
+  text-align: center;
+}
+
+.top {
+  margin-top: 3rem;
+}
