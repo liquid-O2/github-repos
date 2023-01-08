@@ -54,7 +54,7 @@ figure {
 .thead {
   width: 100%;
   display: grid;
-  grid-template-columns: 0.5fr 2.2fr 1fr 1fr;
+  grid-template-columns: 2.2fr 1fr 1fr;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -65,21 +65,26 @@ figure {
     padding: 0;
   }
 }
+.body-index {
+  display: none;
+}
+.index {
+  display: none;
+}
 @media (min-width: 768px) {
+  .body-index,
+  .index {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
   .tbody-row,
   .thead {
     display: grid;
     grid-template-columns: 0.5fr 2.2fr 1fr 1fr 1fr;
   }
 }
-.body-index {
-  font-size: 12px;
-  max-width: 32px;
-  line-height: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .name {
   font-size: 14px;
   padding-right: 8px;
