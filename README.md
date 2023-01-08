@@ -1,3 +1,5 @@
+![image](https://cdn.sanity.io/images/lo6epx6n/production/1b929ae806fc756506e6f2bcf049e70cbd94a23b-6000x4500.jpg)
+
 # GitHub Repos
 
 GitHub Repos is a web app that displays the most popular GitHub repositories for a selected programming language. Keep up with the latest open-source projects and trends in your favorite language with GitHub Repos.
