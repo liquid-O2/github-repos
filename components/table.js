@@ -1,6 +1,5 @@
 import { SelectedLang } from '../pages';
 
-import useSWR from 'swr';
 import TableBody from './tableBody';
 const TableHead = () => {
   return (
