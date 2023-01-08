@@ -1,4 +1,4 @@
-![image](https://cdn.sanity.io/images/lo6epx6n/production/1b929ae806fc756506e6f2bcf049e70cbd94a23b-6000x4500.jpg)
+![image](https://cdn.sanity.io/images/lo6epx6n/production/6fc56afaaca64d9670fa9735bd36045d2c7d83d1-6000x4500.jpg)
 
 # GitHub Repos
 
