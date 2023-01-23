@@ -56,5 +56,4 @@ npm run test
 ## Contributing
 If you'd like to contribute to Github Repos, please fork the repository and make your changes as a separate branch. Once you've made your changes, open a pull request and we'll review your submission.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE]() file for details.
+
